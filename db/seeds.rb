@@ -5,6 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-['A brief history of the time','Foundation', 'Foundation II', 'Lord of the Rings', 'World War Z'].each do |title|
-  puts "Adding books to the list" if Book.find_or_create_by(title: title)
-end
+Book.create([{title: 'A brief history of the time', author: 'Stephen Hawking'},{title: 'Foundation', author: 'Isaac Asimov'}, {title: 'Foundation II', author: 'Isaac Asimov'}])

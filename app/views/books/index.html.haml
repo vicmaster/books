@@ -1,7 +1,7 @@
 - @books.each do |book|
   %ul
     %li
-      = book.title
+      = "#{book.title} by #{book.author}"
 
 %p
   = link_to "Add book", new_book_path

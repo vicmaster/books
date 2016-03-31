@@ -1,5 +1,7 @@
 = form_for(@book) do |f|
   %p
-    = f.text_field :title, :placeholder => "Add new title"
+    = f.text_field :title, :placeholder => "Add new book title"
+  %p
+    = f.text_field :author, :placeholder => "Add new author"
   %p
     = f.submit
